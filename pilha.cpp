@@ -4,12 +4,14 @@ using namespace std;
 
 Pilha::Pilha(int tam)
 {
-
+    max=tam;
+    top=-1; // melhor valor p verificacao se esta vazio e sempre estarmos no toporeal, e nao um a afrente.
+    vet = new int [max];
 }
 
 Pilha::~Pilha()
 {
-
+    delete [] vet;
 }
 
 int Pilha::getTop()
