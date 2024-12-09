@@ -11,6 +11,7 @@ class Pilha{
         void empilha(int val);
         void desempilha();
         bool vazia();
+        bool cheia();
     private:
         int max;
         int top;

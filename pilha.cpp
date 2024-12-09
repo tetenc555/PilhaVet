@@ -23,7 +23,7 @@ int Pilha::getTop()
 
 void Pilha::empilha(int val)
 {
-    if (top==max-1)
+    if (this->cheia())
         return;
     vet[top++]=val;
 }
@@ -38,6 +38,11 @@ void Pilha::desempilha()
 bool Pilha::vazia()
 {
     return (top==-1);
+}
+
+bool Pilha::cheia()
+{
+    return (top==(max-1));
 }
 
 #include "pilha.h"
