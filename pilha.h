@@ -9,7 +9,7 @@ class Pilha{
         ~Pilha();
         int getTop();
         void empilha(int val);
-        int desempilha();
+        void desempilha();
         bool vazia();
     private:
         int max;

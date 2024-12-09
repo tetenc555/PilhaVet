@@ -16,22 +16,28 @@ Pilha::~Pilha()
 
 int Pilha::getTop()
 {
-
-}
+    if (this->vazia())
+        return NULL;
+    return vet[top];
+} 
 
 void Pilha::empilha(int val)
 {
-
+    if (top==max-1)
+        return;
+    vet[top++]=val;
 }
         
-int Pilha::desempilha()
+void Pilha::desempilha()
 {
-
+    if (this->vazia())
+        return;
+    top--;
 }
 
 bool Pilha::vazia()
 {
-
+    return (top==-1);
 }
 
 #include "pilha.h"
